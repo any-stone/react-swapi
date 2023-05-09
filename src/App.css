@@ -1,6 +1,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 .starship-details-card {
@@ -76,3 +77,4 @@ nav .link a {
 nav .link a:hover {
   color: lightblue;
 }
+
