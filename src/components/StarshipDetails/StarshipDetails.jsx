@@ -15,20 +15,16 @@ const StarshipDetails = () => {
     fetchDetails()
   }, [starshipId])
 
-  console.log('starship', starshipDetails)
-  
-  if (!starshipDetails) return <h1>Loading...</h1>
+  if (!starshipDetails.name) return <h1>Loading...</h1>
 
   return (
     <main>
       <h1>Starship Details</h1>
-      <div className="card-container ">
-        <div className="starship-details">
+        <div className="starship-details-card">
           <h3>Name: {starshipDetails.name}</h3>
           <h3>Model: {starshipDetails.model}</h3>
           <Link to='/starships'>RETURN</Link>
         </div>
-      </div>
     </main>
   )
 }

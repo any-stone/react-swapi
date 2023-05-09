@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <nav>
-      <div className="link">
-        <Link to={"/starships"}>Star Wars Starships</Link>
-      </div>
+      <Link to={"/starships"}>Star Wars Starships</Link>
     </nav>
   )
 }
